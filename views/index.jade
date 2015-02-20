@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  div.container
+    h1 Sensors
+        
+
+
+    div#sensors.row
+
+    div.btn-group(role='group')
+      button.btn.btn-default.active.temp-unit-btn(type='button', value='C') &deg;C
+      button.btn.btn-default.temp-unit-btn(type='button', value='F') &deg;F
+      button.btn.btn-default.temp-unit-btn(type='button', value='K') K  
+
+
+    div#tempTemplate.sensorBlock.tempBlockcol-sm-6.col-md-4.col-lg-3.hide
+      div.well
+        h1 
+          span.temp
+        p.name name
+
+    audio#murica-clip
+      source(src='/sounds/murica.m4a', type='audio/mp4')
+      source(src='/sounds/murica.ogg', type='audio/ogg')
+    script(src='/javascripts/sensors.js')
+
+
