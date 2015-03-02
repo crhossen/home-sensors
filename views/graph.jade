@@ -1,0 +1,15 @@
+//
+   Created by Chris on 2/17/2015.
+
+extends layout
+
+block vars
+  - var graphPage = true
+
+block content
+  div.container
+    h2 Graphs
+    div.btn-group#sensors
+    div#graph
+
+  script(src='/javascripts/graphs.js')
